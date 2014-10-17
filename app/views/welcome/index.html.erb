@@ -12,3 +12,20 @@
   <p>Log-In</p>
 </div>
 
+<div>
+  <ul>
+    <li>IMAGE</li>
+    <li>picture of food</li>
+    <li>picture of food</li>
+    <li>picture of food</li>
+  </ul>
+</div>
+
+<a href="#" class="myButton">Random Cuisine</a>
+
+    Try some <%= @cuisine %>
+    <%= @item.name %>!
+<!--  <img src="/assets/<%= @item.photo_path %>" />  direct path but is hard to search.
+<%= image_tag @item.photo_path %> is the optimal way to point to the correct path.  Image_tag is a METHOD  -->
+    <%= image_tag @item.photo_path %>
+
