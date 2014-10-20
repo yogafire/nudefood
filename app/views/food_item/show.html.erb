@@ -1,2 +1,19 @@
-<h1>FoodItem#show</h1>
-<p>Find me in app/views/food_item/show.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <strong>
+        Try this <span class="cuisine.name"><%=item.cuisine %></span> item:<%= link_to item.name, controller: 'food_item', action: 'show', id: item.id %>
+      </strong>
+    </div>
+  </div>
+</div>
+
+<h1>Bad Cat</h1>
+<p>Meow you are a worthless human</p>
+
+<p>Summon cat number <%= @id_requested %>.</p>
+<p>Why do you continue to bother me</p>
+<p>Cat number <%= @id_requested %></p>
+
+<p><%= image_tag @item.photo_path %></p>
+
